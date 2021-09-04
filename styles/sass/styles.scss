@@ -1,2 +1,136 @@
+// ================> PARTIALS
 @import "setup";
 @import "vars";
+
+// ================> MIXIN
+@mixin baseFont () {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 125%;
+}
+
+@mixin boldHeading ($fontSize, $letterSpacing, $lineHeight) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+}
+
+// ================> TYPOGRAPHY / GENERAL
+html {
+    @include baseFont();
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+// ================> HEADER
+header {
+    background-image: url($backgroundImg);
+    background-position: center;
+    height: 85vh;
+    position: relative;
+}
+
+.headingImg2 {
+    background-image: url($heading1Img);
+    height: 25rem;
+    width: 30rem;
+    position: absolute;
+    right: 0;
+    top: 9rem;
+}
+
+h1 {
+    color: $yellow;
+    font-size: 8rem;
+    margin-left: 25%;
+    position: relative;
+    z-index: 4;
+}
+
+.lineBreak {
+    display: block;
+    color: $offWhite;
+}
+
+// ================> NAV
+.homePageNav {
+    display: flex;
+    padding-top: 1.2rem;
+}
+
+.homePageNav a {
+    color: $offWhite;
+    padding-right: 2.1rem;
+    font-family: $headingFont;
+}
+
+.logo {
+    font-size: 2.1rem;
+}
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks a {
+    text-transform: uppercase;
+}
+
+.navLinks a:hover {
+    color: $yellow;
+}
+// ================> MAIN 
+
+// ================> ABOUT
+.about {
+    padding-top: 8rem;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
+}
+.about h2 {
+    @include boldHeading(2.8rem, 1.3px, 32px)
+}
+
+.about p {
+    // width: 20rem;
+    // text-align: center;
+    padding: 0 10rem;
+}
+// ================> ARTICLES SECTION
+
+// ================> DISCOVER SECTION
+
+// ================> SECOND NAV
+
+// ================> BANNER
+
+// ================> FOUNDER SECTION
+
+// ================> GALLERY
+
+// ================> FOOTER
