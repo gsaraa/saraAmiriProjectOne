@@ -254,6 +254,7 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -262,6 +263,14 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.moreBtn {
+  background-color: #0E902D;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
 }
 
 header {
@@ -290,7 +299,7 @@ h1 {
 
 .lineBreak {
   display: block;
-  color: #f0EFED;
+  color: white;
 }
 
 .homePageNav {
@@ -301,7 +310,7 @@ h1 {
 }
 
 .homePageNav a {
-  color: #f0EFED;
+  color: white;
   padding-right: 2.1rem;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -331,7 +340,8 @@ h1 {
 }
 
 .about {
-  padding-top: 8rem;
+  padding: 10rem 0;
+  background-color: #f0EFED;
   text-align: center;
 }
 
@@ -344,5 +354,128 @@ h1 {
 }
 
 .about p {
-  padding: 0 10rem;
+  padding: 0 4rem;
+}
+
+.workshop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.workshop div {
+  width: 50%;
+}
+
+.workshopImg {
+  position: relative;
+}
+
+.workshopImg img {
+  width: calc(100% - 6rem);
+  position: absolute;
+  left: 0;
+  top: -2.5rem;
+  -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
+          box-shadow: 1rem 1rem 1px #F8E71C;
+}
+
+.workshopText {
+  padding: 1rem 4rem 1rem 6rem;
+  text-align: start;
+}
+
+.discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+
+.discover div {
+  width: 50%;
+}
+
+.discoverImg {
+  position: relative;
+}
+
+.discoverImg img {
+  width: calc(100% - 6rem);
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
+  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
+          box-shadow: -1rem 1rem 1px #F8E71C;
+}
+
+.discoverText {
+  padding: 1rem 6rem 1rem 4rem;
+  text-align: end;
+}
+
+.additionalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.additionalInfo div {
+  width: 50%;
+}
+
+.additionalInfo p {
+  width: 30rem;
+}
+
+.greenhouse,
+.community,
+.blog,
+.inTouch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.greenhouse i,
+.community i,
+.blog i,
+.inTouch i {
+  background-color: #F8E71C;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery ul li {
+  margin: 4rem 1rem;
+}
+
+.gallery img {
+  height: 18rem;
+}
+
+footer {
+  background: #2C2C2C;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #f0EFED;
 }

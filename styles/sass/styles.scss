@@ -17,6 +17,8 @@
     line-height: $lineHeight;
 }
 
+
+
 // ================> TYPOGRAPHY / GENERAL
 html {
     @include baseFont();
@@ -34,6 +36,7 @@ ul {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -41,6 +44,14 @@ img {
     max-width: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.moreBtn {
+    background-color: $green;
+    font-family: $headingFont;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
 }
 
 // ================> HEADER
@@ -70,7 +81,7 @@ h1 {
 
 .lineBreak {
     display: block;
-    color: $offWhite;
+    color: white;
 }
 
 // ================> NAV
@@ -80,7 +91,7 @@ h1 {
 }
 
 .homePageNav a {
-    color: $offWhite;
+    color: white;
     padding-right: 2.1rem;
     font-family: $headingFont;
 }
@@ -105,32 +116,136 @@ h1 {
 
 // ================> ABOUT
 .about {
-    padding-top: 8rem;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    padding: 10rem 0;
+    background-color: $offWhite;
     text-align: center;
 }
+
 .about h2 {
     @include boldHeading(2.8rem, 1.3px, 32px)
 }
 
 .about p {
-    // width: 20rem;
-    // text-align: center;
-    padding: 0 10rem;
+    padding: 0 4rem;
 }
+
 // ================> ARTICLES SECTION
 
-// ================> DISCOVER SECTION
+// ================> WORKSHOP SECTION
 
-// ================> SECOND NAV
+.workshop {
+    display: flex;
+    justify-content: start;
+    // margin-top: 2.5rem;
+}
+
+.workshop div {
+    width: 50%;
+}
+
+.workshopImg {
+    position: relative;
+}
+
+.workshopImg img {
+    width: calc(100% - 6rem);
+    position: absolute;
+    left: 0;
+    top: -2.5rem;
+    box-shadow: 1rem 1rem 1px $yellow;
+}
+
+.workshopText {
+    padding: 1rem 4rem 1rem 6rem;
+    text-align: start;
+}
+
+// ================> DISCOVER SECTION
+.discover {
+    display: flex;
+    // justify-content: flex-end;
+    margin-bottom: 2.5rem;
+    
+}
+
+.discover div {
+    width: 50%;
+}
+
+.discoverImg {
+    position: relative;
+}
+
+.discoverImg img {
+    width: calc(100% - 6rem);
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    box-shadow: -1rem 1rem 1px $yellow;
+}
+
+.discoverText {
+    padding: 1rem 6rem 1rem 4rem;
+    text-align: end;
+}
+// ================> ADDITIONAL INFO
+.additionalInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.additionalInfo div {
+    width: 50%;
+}
+
+.additionalInfo p {
+    width: 30rem;
+}
+
+.greenhouse,
+.community,
+.blog,
+.inTouch {
+    display: flex;
+}
+
+.greenhouse i,
+.community i,
+.blog i,
+.inTouch i {
+    background-color: $yellow;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
 
 // ================> BANNER
 
 // ================> FOUNDER SECTION
 
 // ================> GALLERY
+.gallery ul {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery ul li {
+    margin: 4rem 1rem;
+}
+
+.gallery img {
+    height: 18rem;
+}
 
 // ================> FOOTER
+footer {
+    background: $black;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: $offWhite;
+}
