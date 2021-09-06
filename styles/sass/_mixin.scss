@@ -1,0 +1,13 @@
+@mixin baseFont () {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 125%;
+}
+
+@mixin boldHeading ($fontSize, $letterSpacing, $lineHeight) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+}
