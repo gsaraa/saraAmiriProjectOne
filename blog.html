@@ -12,91 +12,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- LINK TO STYLES SHEET -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/blogStyles.css">
 
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-            <a class="logo" href="#">Planted</a>
+    <nav>
+        <div class="wrapper">
+
+            <div class="blogNav">
+                <a class="logo" href="#">Planted</a>
+                
+                <ul class="blogNavLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <header>
+    <header>
+        <div class="wrapper">
             <h1>Blog</h1>
-        </header>
+        </div>
+    </header>
 
-    </div>
-
-    <main>
-        <section class="missionContainer">
-            <div class="missionImg"><img src="./assets/post-image.jpg" alt="a shot of a rubber plant, also know as ficus elastica"></div>
-            <div class="missionText">
-                <h2>Our mission at Planted</h2>
-                <p class="publishingTime">Monday January 21st, 2019 by <span class="writerName">Yousra</span></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestias velit quis excepturi. Earum quo velit laboriosam fuga necessitatibus debitis dolor alias eos facilis aliquam placeat exercitationem molestias, aspernatur assumenda?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur, earum odit dignissimos quaerat porro recusandae tempora laudantium eius architecto enim repellendus voluptates rem officiis quidem, eligendi fugit. Illo, dicta!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis similique aspernatur sit tempora saepe placeat vero iusto pariatur ducimus laudantium repellendus corrupti mollitia qui omnis est, veritatis numquam. Iure, accusantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore unde a nobis adipisci, obcaecati quam magnam sint recusandae dolor reiciendis eaque. Vitae fuga rem, nulla saepe tenetur dolor voluptatibus tempore!</p>
+    <div class="mainAsideFlex">
+        <aside>
+            <div class="sideBarImg"><img src="./assets/side-bar-image.jpg" alt="a shot of a window from outside surrounding by rocky wall"></div>
+            <div class="wrapper">
+                <div>
+                    <h4>About Planted</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione voluptates voluptatem quo cupiditate repudiandae ex consequuntur sapiente id? Incidunt provident maxime sint eos dolorem asperiores inventore debitis eligendi pariatur. <a class="asideMore" href="#">Find out more.</a></p>
+                </div>
+                <div>
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li>consectetur adipisicing elit</li>
+                        <li>ratione voluptates</li>
+                        <li>voluptatem quo</li>
+                        <li>Incidunt provident</li>
+                    </ul>
+                </div>
             </div>
+        </aside>
 
-        </section>
-        <section class="commentsContainer">
-            <h3>Comments:</h3>
-            <div class="jeremy">
-                <img src="./assets/profile-image.jpg" alt="a picture of the reviewer">
-                <p class="commentTime">Tuesday October 9th, 2018 by Jeremy</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusantium deleniti nesciunt ratione illo magni eius eveniet laudantium aperiam nihil nam labore explicabo atque fuga rerum doloremque laborum consectetur ea.</p>
-            </div>
-
-            <div class="julia">
-                <img src="./assets/profile-image-2.jpg" alt="a picture of another reviewer">
-                <p class="commentTime">Wednesday October 10th, 2018 by Julia</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione hic harum sit temporibus dolores architecto saepe asperiores, perspiciatis quidem blanditiis provident, quos perferendis quam nulla reprehenderit nesciunt vero. Asperiores.</p>
-            </div>
-        </section>
-        <section class="formContainer">
-
-            <form action="#">
-                <div class="">
-                    <label for="userName">Name</label>
-                    <input type="name" class="userName" id="userName" name="userName" placeholder="Name">
-
-                    <label for="userEmail">Email Address</label>
-                    <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">
+        <main>
+            <section class="missionContainer">
+                <div class="missionImg"><img src="./assets/post-image.jpg" alt="a shot of a rubber plant, also know as ficus elastica"></div>
+                <div class="missionText wrapper">
+                    <h2>Our mission at Planted</h2>
+                    <p class="publishingTime">Monday January 21st, 2019 by <span class="writerName">Yousra</span></p>
+                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus. </p>
+                    <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. </p>
                 </div>
 
-                <label for="userComment">Your Comments</label>
-                <textarea name="userComment" id="userComment" placeholder="Comment"></textarea>
+            </section>
+            <section class="commentsContainer wrapper">
+                <h3>Comments:</h3>
+                <div class="jeremy">
+                    <img src="./assets/profile-image.jpg" alt="a picture of the reviewer">
+                    <p class="commentTime">Tuesday October 9th, 2018 by Jeremy</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusantium deleniti nesciunt ratione illo magni eius eveniet laudantium aperiam nihil nam labore explicabo atque fuga rerum doloremque laborum consectetur ea.</p>
+                </div>
 
-                <button type="submit">Post Comment</button>
-            </form>
+                <div class="julia">
+                    <img src="./assets/profile-image-2.jpg" alt="a picture of another reviewer">
+                    <p class="commentTime">Wednesday October 10th, 2018 by Julia</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione hic harum sit temporibus dolores architecto saepe asperiores, perspiciatis quidem blanditiis provident, quos perferendis quam nulla reprehenderit nesciunt vero. Asperiores.</p>
+                </div>
+            </section>
+            <section class="formContainer">
 
-        </section>
-    </main>
+                <form action="#">
+                    <div class="">
+                        <label for="userName">Name</label>
+                        <input type="name" class="userName" id="userName" name="userName" placeholder="Name">
 
-    <aside>
-        <div class="sideBarImg"><img src="./assets/side-bar-image.jpg" alt="a shot of a window from outside surrounding by rocky wall"></div>
-        <div>
-            <h4>About Planted</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione voluptates voluptatem quo cupiditate repudiandae ex consequuntur sapiente id? Incidunt provident maxime sint eos dolorem asperiores inventore debitis eligendi pariatur. <a class="asideMore" href="#">Find out more.</a></p>
-        </div>
-        <div>
-            <h4>Recent Posts</h4>
-            <ul>
-                <li>consectetur adipisicing elit</li>
-                <li>ratione voluptates</li>
-                <li>voluptatem quo</li>
-                <li>Incidunt provident</li>
-            </ul>
-            
-        </div>
-    </aside>
+                        <label for="userEmail">Email Address</label>
+                        <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">
+                    </div>
+
+                    <label for="userComment">Your Comments</label>
+                    <textarea name="userComment" id="userComment" placeholder="Comment"></textarea>
+
+                    <button type="submit">Post Comment</button>
+                </form>
+
+            </section>
+        </main>
+
+
+    </div>
 
     <footer>
         <p>Copyright © Juno College of Technology</p>

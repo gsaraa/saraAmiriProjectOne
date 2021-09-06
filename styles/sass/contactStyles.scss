@@ -1,0 +1,98 @@
+// ================> PARTIALS
+@import "setup";
+@import "vars";
+@import "mixin";
+
+// ================> TYPOGRAPHY / GENERAL
+html {
+    @include baseFont();
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2, h3, h4 {
+    font-family: $headingFont;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+// ================> NAV
+
+nav {
+    background-color: black;
+    height: 12vh;
+    padding: 1rem 0;
+}
+
+.contactNav {
+    display: flex;
+}
+
+.contactNav a {
+    color: white;
+    padding-right: 2.1rem;
+    font-family: $headingFont;
+}
+
+.logo {
+    font-size: 2.1rem;
+}
+
+.contactNavLinks {
+    display: flex;
+}
+
+.contactNavLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactNavLinks a {
+    text-transform: uppercase;
+}
+
+.contactNavLinks a:hover {
+    color: $yellow;
+}
+
+// ================> HEADER
+header {
+    background-image: url($contactHeader);
+    background-position: center;
+    height: calc(70vh - 12vh);
+}
+
+header h1 {
+    @include boldHeading(4rem, 1px, 4.6rem);
+    color: $yellow;
+    margin: 0;
+    padding-top: 30vh;
+}
+
+.lineBreak {
+    display: block;
+}
+
+// ================> MAIN
+main {
+    display: flex;
+}
