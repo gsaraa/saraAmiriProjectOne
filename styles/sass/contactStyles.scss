@@ -6,6 +6,7 @@
 // ================> TYPOGRAPHY / GENERAL
 html {
     @include baseFont();
+    background-color: $offWhite;
 }
 .wrapper {
     width: 90%;
@@ -78,7 +79,7 @@ nav {
 header {
     background-image: url($contactHeader);
     background-position: center;
-    height: calc(70vh - 12vh);
+    height: calc(75vh - 12vh);
 }
 
 header h1 {
@@ -93,6 +94,110 @@ header h1 {
 }
 
 // ================> MAIN
-main {
+.mainAsideFlex {
     display: flex;
+    flex: 1 0 auto;
+    height: 20rem;
+
+        main {
+            width: 70%;
+        }
+        
+        aside {
+            width: 30%;
+            margin: 9rem 2rem 9rem 0;
+        }
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+.socialMedia ul {
+    display: flex;
+
+        a {
+            color: $green;
+            padding-right: 1.5rem;
+        }
+}
+
+.contactAndAddress {
+
+        .email {
+            @include boldHeading (1.2rem, 1px, 1.6rem);
+            margin: 0.5rem 0;
+        }
+
+        .email ~ p {
+            margin: 0;
+            line-height: 1.5rem;
+        }
+}
+
+.commentContainer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1rem 1rem 1px $yellow;
+    background-color: white;
+    padding: 4rem 3rem;
+    position: relative;
+    right: 0;
+    top: -12rem;
+
+        input {
+            width: 50%;
+            height: 2rem;
+            padding: 1rem;
+            border: none;
+            border-bottom: 2px solid $green;
+        }
+
+        input[type=name] {
+            margin-right: 1rem;
+        }
+
+        textarea {
+            width: 100%;
+            height: 13rem;
+            resize: none;
+            border: 2px solid $green;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
+        button {
+            background-color: $green;
+            font-family: $headingFont;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+        }
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: $bodyFont;
+}
+
+.userInfo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+// ================> FOOTER
+
+footer {
+    background: $black;
+    text-align: center;
+    margin-top: 9rem;
+
+        p {
+            margin: 0;
+            padding: 0.5rem 0;
+            color: $offWhite;
+        }
 }

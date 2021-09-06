@@ -39,42 +39,50 @@
             </div>
         </header>
 
-        <main>
-            <section>
-                <div class="socialMedia">
-                    <ul>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
-                </div>
-                <div class="email"><p>info@email.com</p></div>
-                <div class="contactAndAddress">
-                    <p>123 - 456 - 7890</p>
-                    <p>123 Queen Street West, Unit 10 <br>Toronto, Ontario <br>M5V2D5</p>
-                </div>
-            </section>
-            
-            <section>
-                <form action="#">
-                    <div class="">
-                        <label for="userName">Name</label>
-                        <input type="name" class="userName" id="userName" name="userName" placeholder="Name">
-    
-                        <label for="userEmail">Email Address</label>
-                        <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">
+        <div class="wrapper">
+            <div class="mainAsideFlex">
+                <aside>
+                    <div class="socialMedia">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
                     </div>
-    
-                    <label for="userComment">Your Comments</label>
-                    <textarea name="userComment" id="userComment" placeholder="Comment"></textarea>
-    
-                    <button type="submit">Post Comment</button>
-                </form>
-            </section>
+                    <!-- <div class="email"></div> -->
+                    <div class="contactAndAddress">
+                        <p class="email">info@email.com</p>
+                        <p>123 - 456 - 7890</p>
+                        <p>123 Queen Street West, Unit 10 <br>Toronto, Ontario <br>M5V2D5</p>
+                    </div>
+            
+                </aside>
 
-        </main>
+                <main>
+                    <section>
+                        <form action="#" class="commentContainer">
+                            <div class="userInfo">
+                                <label for="userName" class="sr-only" >Name</label>
+                                <input type="name" class="userName" id="userName" name="userName" placeholder="Name">
+            
+                                <label for="userEmail" class="sr-only" >Email Address</label>
+                                <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">
+                            </div>
+            
+                            <label for="userComment" class="sr-only" >Message</label>
+                            <textarea name="userComment" id="userComment" placeholder="Message"></textarea>
+            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </section>
 
-    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright © Juno College of Technology</p>
+        </footer>
 </body>
 </html>

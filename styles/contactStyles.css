@@ -239,6 +239,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 125%;
+  background-color: #f0EFED;
 }
 
 .wrapper {
@@ -320,7 +321,7 @@ nav {
 header {
   background-image: url("../assets/contact-header-1.jpg");
   background-position: center;
-  height: calc(70vh - 12vh);
+  height: calc(75vh - 12vh);
 }
 
 header h1 {
@@ -338,8 +339,131 @@ header h1 {
   display: block;
 }
 
-main {
+.mainAsideFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  height: 20rem;
+}
+.mainAsideFlex main {
+  width: 70%;
+}
+.mainAsideFlex aside {
+  width: 30%;
+  margin: 9rem 2rem 9rem 0;
+}
+
+main {
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+}
+
+.socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.socialMedia ul a {
+  color: #0E902D;
+  padding-right: 1.5rem;
+}
+
+.contactAndAddress .email {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  margin: 0.5rem 0;
+}
+.contactAndAddress .email ~ p {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
+          box-shadow: -1rem 1rem 1px #F8E71C;
+  background-color: white;
+  padding: 4rem 3rem;
+  position: relative;
+  right: 0;
+  top: -12rem;
+}
+.commentContainer input {
+  width: 50%;
+  height: 2rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid #0E902D;
+}
+.commentContainer input[type=name] {
+  margin-right: 1rem;
+}
+.commentContainer textarea {
+  width: 100%;
+  height: 13rem;
+  resize: none;
+  border: 2px solid #0E902D;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.commentContainer button {
+  background-color: #0E902D;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+.userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: #2C2C2C;
+  text-align: center;
+  margin-top: 9rem;
+}
+footer p {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #f0EFED;
 }
