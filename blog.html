@@ -42,18 +42,18 @@
     <div class="mainAsideFlex">
         <aside>
             <div class="sideBarImg"><img src="./assets/side-bar-image.jpg" alt="a shot of a window from outside surrounding by rocky wall"></div>
-            <div class="wrapper">
-                <div>
+            <div class="sideBarText">
+                <div class="aboutPlanted">
                     <h4>About Planted</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione voluptates voluptatem quo cupiditate repudiandae ex consequuntur sapiente id? Incidunt provident maxime sint eos dolorem asperiores inventore debitis eligendi pariatur. <a class="asideMore" href="#">Find out more.</a></p>
+                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a class="asideMore" href="#">Find out more.</a></p>
                 </div>
                 <div>
                     <h4>Recent Posts</h4>
-                    <ul>
-                        <li>consectetur adipisicing elit</li>
-                        <li>ratione voluptates</li>
-                        <li>voluptatem quo</li>
-                        <li>Incidunt provident</li>
+                    <ul class="recentPosts">
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Augue lacinia at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec pharetra id</li>
                     </ul>
                 </div>
             </div>
@@ -75,29 +75,39 @@
             <section class="commentsContainer wrapper">
                 <h3>Comments:</h3>
                 <div class="jeremy">
+
                     <img src="./assets/profile-image.jpg" alt="a picture of the reviewer">
-                    <p class="commentTime">Tuesday October 9th, 2018 by Jeremy</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusantium deleniti nesciunt ratione illo magni eius eveniet laudantium aperiam nihil nam labore explicabo atque fuga rerum doloremque laborum consectetur ea.</p>
+
+                    <div class="jeremysComment">
+                        <p class="commentTime">Tuesday October 9th, 2018 by Jeremy</p>
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                    </div>
+
                 </div>
 
                 <div class="julia">
                     <img src="./assets/profile-image-2.jpg" alt="a picture of another reviewer">
-                    <p class="commentTime">Wednesday October 10th, 2018 by Julia</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione hic harum sit temporibus dolores architecto saepe asperiores, perspiciatis quidem blanditiis provident, quos perferendis quam nulla reprehenderit nesciunt vero. Asperiores.</p>
-                </div>
-            </section>
-            <section class="formContainer">
 
-                <form action="#">
-                    <div class="">
-                        <label for="userName">Name</label>
+                    <div class="juliasComment">
+                        <p class="commentTime">Wednesday October 10th, 2018 by Julia</p>
+                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                    </div>
+
+                </div>
+
+            </section>
+            <section>
+
+                <form action="#" class="formContainer">
+                    <div class="userInfo">
+                        <label for="userName" class="sr-only" >Name</label>
                         <input type="name" class="userName" id="userName" name="userName" placeholder="Name">
 
-                        <label for="userEmail">Email Address</label>
+                        <label for="userEmail" class="sr-only" >Email Address</label>
                         <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">
                     </div>
 
-                    <label for="userComment">Your Comments</label>
+                    <label for="userComment" class="sr-only" >Your Comments</label>
                     <textarea name="userComment" id="userComment" placeholder="Comment"></textarea>
 
                     <button type="submit">Post Comment</button>

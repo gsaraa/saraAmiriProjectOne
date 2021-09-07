@@ -95,31 +95,153 @@ h1 {
 main {
     width: calc(100vw - 35vw);
     margin-left: 1rem;
-}
-.missionImg {
     position: relative;
 }
 
-.missionImg img {
-    position: absolute;
-    right: 0;
-}
 .missionContainer {
-    border-left: .5rem solid $yellow;
-    border-bottom: .5rem solid $yellow;
+    flex-direction: column;
+    margin-top: -10rem;
+    border-bottom: 2px solid $yellow;
+    border-left: 2px solid $yellow;
+}
+
+.missionImg img {
+    box-shadow: -1rem 1rem 1px $yellow;
+}
+
+.missionText {
 }
 // ================> ASIDE
 
 aside {
+    display: flex;
+    flex-direction: column;
     width: calc(100vw - 65vw);
-    margin-right: 1rem;
+    margin: 5rem 2rem 0 0;
+
+        .sideBarImg img {
+            width: 23.4rem;
+            height: 18rem;
+            box-shadow: .5rem 0 1px white;
+        }
 }
+
+.sideBarText {
+    background-color: white;
+    margin: -.2rem 0 0 4rem;
+    padding: 1rem;
+
+        h4 {
+            @include boldHeading(1rem, 1px, 1.6rem);
+            margin: 1rem 0;
+        }
+
+        .asideMore {
+            color: $forestGreen;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .aboutPlanted {
+            margin-bottom: 4rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .recentPosts li::before {
+            content: "•  ";
+            color: $green;
+        }
+}
+
+// ================> COMMENTS SECTION
+.jeremy,
+.julia {
+    display: flex;
+    margin: 2.5rem 0 5rem 0;
+    
+        p {
+            margin: 0;
+        }
+
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .jeremysComment,
+        .juliasComment {
+            margin-left: 1rem;
+        }
+
+        .commentTime {
+            @include boldHeading(1rem, 1px, 1.6rem);
+            color: $forestGreen;
+            margin-bottom: .5rem;
+        }
+}
+
+.commentContainer {
+    display: flex;
+        
+}      
+
+// ================> COMMENT FORM
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    
+        .userInfo {
+            display: flex;
+            margin-bottom: 2rem;
+            
+
+            input {
+                width: 50%;
+                height: 2rem;
+                padding: 1.5rem;
+                border: none;
+                border-bottom: 2px solid $green;
+                background-color: $offWhite;
+            }
+
+            input[type=name] {
+                margin-right: 1rem;
+            }
+        }
+
+        textarea {
+            height: 13rem;
+            background-color: $offWhite;
+            border: 2px solid $green;
+            resize: none;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+        
+        button {
+            background-color: $green;
+            font-family: $headingFont;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-family: $headingFont;
+        }
+}
+
 
 // ================> FOOTER
 footer {
     background: $black;
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 2rem;
 
         p {
             margin: 0;

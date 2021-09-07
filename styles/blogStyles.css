@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -344,31 +345,173 @@ h1 {
 main {
   width: calc(100vw - 35vw);
   margin-left: 1rem;
-}
-
-.missionImg {
   position: relative;
 }
 
-.missionImg img {
-  position: absolute;
-  right: 0;
+.missionContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -10rem;
+  border-bottom: 2px solid #F8E71C;
+  border-left: 2px solid #F8E71C;
 }
 
-.missionContainer {
-  border-left: 0.5rem solid #F8E71C;
-  border-bottom: 0.5rem solid #F8E71C;
+.missionImg img {
+  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
+          box-shadow: -1rem 1rem 1px #F8E71C;
 }
 
 aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: calc(100vw - 65vw);
+  margin: 5rem 2rem 0 0;
+}
+aside .sideBarImg img {
+  width: 23.4rem;
+  height: 18rem;
+  -webkit-box-shadow: 0.5rem 0 1px white;
+          box-shadow: 0.5rem 0 1px white;
+}
+
+.sideBarText {
+  background-color: white;
+  margin: -0.2rem 0 0 4rem;
+  padding: 1rem;
+}
+.sideBarText h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  margin: 1rem 0;
+}
+.sideBarText .asideMore {
+  color: #074115;
+  font-style: italic;
+  font-weight: bold;
+}
+.sideBarText .aboutPlanted {
+  margin-bottom: 4rem;
+}
+.sideBarText p {
+  margin: 0;
+}
+.sideBarText .recentPosts li::before {
+  content: "•  ";
+  color: #0E902D;
+}
+
+.jeremy,
+.julia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5rem 0 5rem 0;
+}
+.jeremy p,
+.julia p {
+  margin: 0;
+}
+.jeremy img,
+.julia img {
+  width: 4rem;
+  height: 4rem;
+}
+.jeremy .jeremysComment,
+.jeremy .juliasComment,
+.julia .jeremysComment,
+.julia .juliasComment {
+  margin-left: 1rem;
+}
+.jeremy .commentTime,
+.julia .commentTime {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  color: #074115;
+  margin-bottom: 0.5rem;
+}
+
+.commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+}
+.formContainer .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.formContainer .userInfo input {
+  width: 50%;
+  height: 2rem;
+  padding: 1.5rem;
+  border: none;
+  border-bottom: 2px solid #0E902D;
+  background-color: #f0EFED;
+}
+.formContainer .userInfo input[type=name] {
   margin-right: 1rem;
+}
+.formContainer textarea {
+  height: 13rem;
+  background-color: #f0EFED;
+  border: 2px solid #0E902D;
+  resize: none;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+.formContainer button {
+  background-color: #0E902D;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.formContainer input::-webkit-input-placeholder, .formContainer textarea::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+.formContainer input::-moz-placeholder, .formContainer textarea::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+.formContainer input:-ms-input-placeholder, .formContainer textarea:-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+.formContainer input::-ms-input-placeholder, .formContainer textarea::-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+.formContainer input::placeholder,
+.formContainer textarea::placeholder {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 footer {
   background: #2C2C2C;
   text-align: center;
-  margin-top: 9rem;
+  margin-top: 2rem;
 }
 footer p {
   margin: 0;

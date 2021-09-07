@@ -199,19 +199,27 @@ h1 {
     flex: 1 0 auto;
     width: 50%;
     margin: 1rem 0;
+        i {
+            background-color: $yellow;
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
 }
 
-.greenhouse i,
-.community i,
-.blog i,
-.inTouch i {
-    background-color: $yellow;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
+// .greenhouse i,
+// .community i,
+// .blog i,
+// .inTouch i {
+//     background-color: $yellow;
+//     border-radius: 50%;
+//     height: 2rem;
+//     width: 2rem;
+//     padding: 0.5rem;
+//     margin: 0.5rem;
+// }
 // ================> BANNER
 
 // ================> FOUNDER SECTION
