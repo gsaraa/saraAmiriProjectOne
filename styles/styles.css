@@ -343,6 +343,10 @@ h1 {
   color: #F8E71C;
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
 .about {
   padding: 10rem 0;
   background-color: #f0EFED;
@@ -369,16 +373,13 @@ h1 {
       -ms-flex-pack: start;
           justify-content: start;
 }
-
 .workshop div {
   width: 50%;
 }
-
-.workshopImg {
+.workshop .workshopImg {
   position: relative;
 }
-
-.workshopImg img {
+.workshop .workshopImg img {
   width: calc(100% - 6rem);
   position: absolute;
   left: 0;
@@ -386,8 +387,7 @@ h1 {
   -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
           box-shadow: 1rem 1rem 1px #F8E71C;
 }
-
-.workshopText {
+.workshop .workshopText {
   padding: 4rem 4rem 0 6rem;
   text-align: start;
 }
@@ -398,16 +398,13 @@ h1 {
   display: flex;
   margin-bottom: 2.5rem;
 }
-
 .discover div {
   width: 50%;
 }
-
-.discoverImg {
+.discover .discoverImg {
   position: relative;
 }
-
-.discoverImg img {
+.discover .discoverImg img {
   width: calc(100% - 6rem);
   position: absolute;
   right: 0;
@@ -415,8 +412,7 @@ h1 {
   -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
           box-shadow: -1rem 1rem 1px #F8E71C;
 }
-
-.discoverText {
+.discover .discoverText {
   padding: 4rem 6rem 0 4rem;
   text-align: end;
 }
@@ -436,15 +432,13 @@ h1 {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
-
-.additionalInfoContainer h2 {
+.additionalInfoContainer .additionalInfoContainer h2 {
   margin: 1rem 0;
 }
-
-.greenhouse,
-.community,
-.blog,
-.inTouch {
+.additionalInfoContainer .greenhouse,
+.additionalInfoContainer .community,
+.additionalInfoContainer .blog,
+.additionalInfoContainer .inTouch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,10 +448,10 @@ h1 {
   width: 50%;
   margin: 1rem 0;
 }
-.greenhouse i,
-.community i,
-.blog i,
-.inTouch i {
+.additionalInfoContainer .greenhouse i,
+.additionalInfoContainer .community i,
+.additionalInfoContainer .blog i,
+.additionalInfoContainer .inTouch i {
   background-color: #F8E71C;
   border-radius: 50%;
   height: 2rem;
@@ -471,24 +465,18 @@ h1 {
   padding: 6rem 0;
   margin: -1rem;
 }
-
-.founderContainer {
+.founder .founderContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
-
-.founderImg {
+.founder .founderContainer .founderImg {
   width: 12rem;
   margin-right: 5rem;
   -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
           box-shadow: 1rem 1rem 1px #F8E71C;
 }
-
-.aboutFounder h4 {
+.founder .founderContainer .aboutFounder h4 {
   font-size: 2.1rem;
   margin: 1rem 0;
 }
@@ -519,4 +507,144 @@ footer p {
   margin: 0;
   padding: 0.5rem 0;
   color: #f0EFED;
+}
+
+@media (max-width: 480px) {
+  header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  header .headingImg2 {
+    display: none;
+  }
+  header h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 50% 0;
+  }
+  header .homePageNav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 2rem;
+  }
+  header .navLinks {
+    display: none;
+  }
+  header .hamburgerMenu {
+    display: block;
+    color: white;
+  }
+
+  .about {
+    padding: 2rem 0;
+  }
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .workshop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workshop .workshop div {
+    width: 100%;
+  }
+  .workshop .workshopImg img {
+    position: relative;
+    left: 2.5rem;
+    top: 1.5em;
+    -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
+            box-shadow: 1rem 1rem 1px #F8E71C;
+  }
+  .workshop .workshopText {
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  .discover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .discover .discover div {
+    width: 100%;
+  }
+  .discover .discoverImg img {
+    position: relative;
+    right: -2.5rem;
+    top: 1.5rem;
+    -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
+            box-shadow: -1rem 1rem 1px #F8E71C;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .discover .discoverText {
+    padding: 2.5rem;
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .additionalInfoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .additionalInfoContainer .greenhouse,
+.additionalInfoContainer .community,
+.additionalInfoContainer .blog,
+.additionalInfoContainer .inTouch {
+    width: 100%;
+  }
+  .additionalInfoContainer .greenhouse i,
+.additionalInfoContainer .community i,
+.additionalInfoContainer .blog i,
+.additionalInfoContainer .inTouch i {
+    margin: 1rem 0.5rem;
+  }
+
+  .founder {
+    padding: 0;
+    margin: 0;
+  }
+  .founder .founderContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 0 3.5rem 0;
+  }
+  .founder .founderContainer .founderImg {
+    margin: 2rem auto;
+  }
+  .founder .founderContainer .aboutFounder {
+    text-align: center;
+  }
+
+  .gallery {
+    padding: 3rem 0;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    margin: 1rem auto;
+  }
+
+  footer {
+    margin-top: 0rem;
+  }
 }
