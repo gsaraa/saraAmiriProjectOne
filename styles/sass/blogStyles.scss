@@ -76,7 +76,7 @@ nav {
 // ================> HEADER
 header {
     background-image: url($blogHeader);
-    background-position: center;
+    background-position: top left;
     height: calc(85vh - 12vh);
 }
 
@@ -94,22 +94,45 @@ h1 {
 // ================> MAIN
 main {
     width: calc(100vw - 35vw);
-    margin-left: 1rem;
-    position: relative;
-}
-
-.missionContainer {
-    flex-direction: column;
-    margin-top: -10rem;
-    border-bottom: 2px solid $yellow;
-    border-left: 2px solid $yellow;
+    margin-left: 4rem;
 }
 
 .missionImg img {
     box-shadow: -1rem 1rem 1px $yellow;
 }
 
+.missionContainer {
+    flex-direction: column;
+    margin-top: -12rem;
+}
+
+.missionTextBorder {
+    width: 95%;
+    border-bottom: .25rem solid $yellow;
+    border-left: .25rem solid $yellow;
+    position: relative;
+    left: -1rem;
+    top: -.5rem;
+}
+
+
 .missionText {
+    padding: 2rem 1rem;
+
+        h2 {
+            @include boldHeading (2.15rem, 1.3px, 1.6rem);
+            margin: 2rem 0 1rem 0;
+        }
+}
+
+.publishingTime {
+    font-style: italic;
+    color: $forestGreen;
+    margin: 0 0 3rem 0;
+
+    .writerName {
+        font-weight: bold;
+    }
 }
 // ================> ASIDE
 
@@ -117,12 +140,18 @@ aside {
     display: flex;
     flex-direction: column;
     width: calc(100vw - 65vw);
-    margin: 5rem 2rem 0 0;
+    position: relative;
+    top: 6rem;
+
+        .sideBarImg {
+            border-right: 1rem solid white;
+        }
 
         .sideBarImg img {
             width: 23.4rem;
             height: 18rem;
-            box-shadow: .5rem 0 1px white;
+            position: relative;
+            top: -1rem;
         }
 }
 
@@ -130,6 +159,8 @@ aside {
     background-color: white;
     margin: -.2rem 0 0 4rem;
     padding: 1rem;
+    position: relative;
+    top: -1rem;
 
         h4 {
             @include boldHeading(1rem, 1px, 1.6rem);
@@ -157,6 +188,12 @@ aside {
 }
 
 // ================> COMMENTS SECTION
+.commentsContainer {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+}      
+
 .jeremy,
 .julia {
     display: flex;
@@ -183,10 +220,7 @@ aside {
         }
 }
 
-.commentContainer {
-    display: flex;
-        
-}      
+
 
 // ================> COMMENT FORM
 .formContainer {

@@ -321,7 +321,7 @@ nav {
 
 header {
   background-image: url("../assets/blog-header-1.jpg");
-  background-position: center;
+  background-position: top left;
   height: calc(85vh - 12vh);
 }
 
@@ -344,8 +344,12 @@ h1 {
 
 main {
   width: calc(100vw - 35vw);
-  margin-left: 1rem;
-  position: relative;
+  margin-left: 4rem;
+}
+
+.missionImg img {
+  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
+          box-shadow: -1rem 1rem 1px #F8E71C;
 }
 
 .missionContainer {
@@ -353,14 +357,37 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -10rem;
-  border-bottom: 2px solid #F8E71C;
-  border-left: 2px solid #F8E71C;
+  margin-top: -12rem;
 }
 
-.missionImg img {
-  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
-          box-shadow: -1rem 1rem 1px #F8E71C;
+.missionTextBorder {
+  width: 95%;
+  border-bottom: 0.25rem solid #F8E71C;
+  border-left: 0.25rem solid #F8E71C;
+  position: relative;
+  left: -1rem;
+  top: -0.5rem;
+}
+
+.missionText {
+  padding: 2rem 1rem;
+}
+.missionText h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.15rem;
+  letter-spacing: 1.3px;
+  line-height: 1.6rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.publishingTime {
+  font-style: italic;
+  color: #074115;
+  margin: 0 0 3rem 0;
+}
+.publishingTime .writerName {
+  font-weight: bold;
 }
 
 aside {
@@ -372,19 +399,25 @@ aside {
       -ms-flex-direction: column;
           flex-direction: column;
   width: calc(100vw - 65vw);
-  margin: 5rem 2rem 0 0;
+  position: relative;
+  top: 6rem;
+}
+aside .sideBarImg {
+  border-right: 1rem solid white;
 }
 aside .sideBarImg img {
   width: 23.4rem;
   height: 18rem;
-  -webkit-box-shadow: 0.5rem 0 1px white;
-          box-shadow: 0.5rem 0 1px white;
+  position: relative;
+  top: -1rem;
 }
 
 .sideBarText {
   background-color: white;
   margin: -0.2rem 0 0 4rem;
   padding: 1rem;
+  position: relative;
+  top: -1rem;
 }
 .sideBarText h4 {
   font-family: "Josefin Sans", sans-serif;
@@ -408,6 +441,17 @@ aside .sideBarImg img {
 .sideBarText .recentPosts li::before {
   content: "•  ";
   color: #0E902D;
+}
+
+.commentsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .jeremy,
@@ -441,12 +485,6 @@ aside .sideBarImg img {
   line-height: 1.6rem;
   color: #074115;
   margin-bottom: 0.5rem;
-}
-
-.commentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .formContainer {
