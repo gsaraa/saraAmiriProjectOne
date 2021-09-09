@@ -73,67 +73,29 @@ nav {
     color: $yellow;
 }
 
+.blogHamburgerMenu {
+    display: none;
+}
+
 // ================> HEADER
 header {
     background-image: url($blogHeader);
     background-position: top left;
     height: calc(85vh - 12vh);
+
+    h1 {
+        @include boldHeading (4rem, 1px, 4.6rem);
+        color: $yellow;
+        margin: 0;
+        padding-top: 45vh;
+    }
 }
 
-h1 {
-    @include boldHeading (4rem, 1px, 4.6rem);
-    color: $yellow;
-    margin: 0;
-    padding-top: 45vh;
-}
-
+// ================> MAIN and ASIDE
 .mainAsideFlex {
     display: flex;
 }
 
-// ================> MAIN
-main {
-    width: calc(100vw - 35vw);
-    margin-left: 4rem;
-}
-
-.missionImg img {
-    box-shadow: -1rem 1rem 1px $yellow;
-}
-
-.missionContainer {
-    flex-direction: column;
-    margin-top: -12rem;
-}
-
-.missionTextBorder {
-    width: 95%;
-    border-bottom: .25rem solid $yellow;
-    border-left: .25rem solid $yellow;
-    position: relative;
-    left: -1rem;
-    top: -.5rem;
-}
-
-
-.missionText {
-    padding: 2rem 1rem;
-
-        h2 {
-            @include boldHeading (2.15rem, 1.3px, 1.6rem);
-            margin: 2rem 0 1rem 0;
-        }
-}
-
-.publishingTime {
-    font-style: italic;
-    color: $forestGreen;
-    margin: 0 0 3rem 0;
-
-    .writerName {
-        font-weight: bold;
-    }
-}
 // ================> ASIDE
 
 aside {
@@ -187,40 +149,82 @@ aside {
         }
 }
 
+// ================> MAIN
+
+main {
+    width: calc(100vw - 35vw);
+    margin-left: 4rem;
+}
+
+.missionContainer {
+    flex-direction: column;
+    margin-top: -12rem;
+
+    .missionImg img {
+        box-shadow: -1rem 1rem 1px $yellow;
+    }
+
+    .missionTextBorder {
+        width: 95%;
+        border-bottom: .25rem solid $yellow;
+        border-left: .25rem solid $yellow;
+        position: relative;
+        left: -1rem;
+        top: -.5rem;
+    }
+
+    .missionText {
+        padding: 2rem 1rem;
+    
+            h2 {
+                @include boldHeading (2.15rem, 1.3px, 1.6rem);
+                margin: 2rem 0 1rem 0;
+            }
+    
+            .publishingTime {
+                font-style: italic;
+                color: $forestGreen;
+                margin: 0 0 3rem 0;
+            
+                .writerName {
+                    font-weight: bold;
+                }
+            }
+    }
+}
+
 // ================> COMMENTS SECTION
 .commentsContainer {
     display: flex;
     width: 95%;
     flex-direction: column;
-}      
 
-.jeremy,
-.julia {
-    display: flex;
-    margin: 2.5rem 0 5rem 0;
+    .jeremy,
+    .julia {
+        display: flex;
+        margin: 2.5rem 0 5rem 0;
+        
+            p {
+                margin: 0;
+            }
     
-        p {
-            margin: 0;
-        }
-
-        img {
-            width: 4rem;
-            height: 4rem;
-        }
-
-        .jeremysComment,
-        .juliasComment {
-            margin-left: 1rem;
-        }
-
-        .commentTime {
-            @include boldHeading(1rem, 1px, 1.6rem);
-            color: $forestGreen;
-            margin-bottom: .5rem;
-        }
-}
-
-
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+    
+            .jeremysComment,
+            .juliasComment {
+                margin-left: 1rem;
+            }
+    
+            .commentTime {
+                @include boldHeading(1rem, 1px, 1.6rem);
+                color: $forestGreen;
+                margin-bottom: .5rem;
+            }
+    }
+}      
 
 // ================> COMMENT FORM
 .formContainer {
@@ -282,4 +286,99 @@ footer {
             padding: 0.5rem 0;
             color: $offWhite;
         }
+}
+
+// ================> MEDIA QUERIES <================
+
+@media (max-width: 480px) {
+    .blogNav {
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+
+    .blogNavLinks {
+        display: none;
+    }
+    
+    .blogHamburgerMenu {
+        display: block;
+        color: white;
+    }
+
+    header h1 {
+        padding-top: 30vh;
+        text-align: center;
+    }
+
+    .mainAsideFlex {
+        flex-direction: column;
+
+        main {
+            width: 100%;
+            margin-left: 0;
+            order: 1;
+        }
+
+        aside {
+            width: 85%;
+            margin: 2rem auto;
+            order: 2;
+            top: 0;
+
+            .sideBarImg img {
+                width: 100%;
+            }
+        }
+    }
+
+    .sideBarText {
+        margin-left: 0;
+    }
+
+    .missionContainer {
+        width: 85%;
+        margin: 2rem;
+
+        .missionText h2 {
+            @include boldHeading (2rem, 1px, inherit);
+            text-align: center;
+        }
+
+        .publishingTime {
+            margin: 0;
+        }
+    }
+
+    .commentsContainer {
+        h3 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .jeremy,
+        .julia {
+            flex-direction: column;
+            margin: 1rem 0;
+            
+                img {
+                    margin: 2rem auto;
+                }
+    
+        
+                .commentTime {
+                    letter-spacing: inherit;
+                }
+        }
+    }
+
+    .formContainer {
+        padding: 1.5rem;
+        .userInfo {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
 }

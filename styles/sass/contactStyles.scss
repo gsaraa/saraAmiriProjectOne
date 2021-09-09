@@ -79,6 +79,7 @@ nav {
     display: none;
 }
 
+
 // ================> HEADER
 header {
     background-image: url($contactHeader);
@@ -207,6 +208,7 @@ footer {
         }
 }
 
+// ================> MEDIA QUERIES <================
 @media (max-width: 480px) {
     .contactNav {
         justify-content: space-between;
@@ -223,8 +225,6 @@ footer {
     }
 
     header {
-        background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
 

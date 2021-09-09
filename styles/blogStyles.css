@@ -319,13 +319,16 @@ nav {
   color: #F8E71C;
 }
 
+.blogHamburgerMenu {
+  display: none;
+}
+
 header {
   background-image: url("../assets/blog-header-1.jpg");
   background-position: top left;
   height: calc(85vh - 12vh);
 }
-
-h1 {
+header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 4rem;
@@ -340,54 +343,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-main {
-  width: calc(100vw - 35vw);
-  margin-left: 4rem;
-}
-
-.missionImg img {
-  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
-          box-shadow: -1rem 1rem 1px #F8E71C;
-}
-
-.missionContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: -12rem;
-}
-
-.missionTextBorder {
-  width: 95%;
-  border-bottom: 0.25rem solid #F8E71C;
-  border-left: 0.25rem solid #F8E71C;
-  position: relative;
-  left: -1rem;
-  top: -0.5rem;
-}
-
-.missionText {
-  padding: 2rem 1rem;
-}
-.missionText h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-  font-size: 2.15rem;
-  letter-spacing: 1.3px;
-  line-height: 1.6rem;
-  margin: 2rem 0 1rem 0;
-}
-
-.publishingTime {
-  font-style: italic;
-  color: #074115;
-  margin: 0 0 3rem 0;
-}
-.publishingTime .writerName {
-  font-weight: bold;
 }
 
 aside {
@@ -443,6 +398,50 @@ aside .sideBarImg img {
   color: #0E902D;
 }
 
+main {
+  width: calc(100vw - 35vw);
+  margin-left: 4rem;
+}
+
+.missionContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -12rem;
+}
+.missionContainer .missionImg img {
+  -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
+          box-shadow: -1rem 1rem 1px #F8E71C;
+}
+.missionContainer .missionTextBorder {
+  width: 95%;
+  border-bottom: 0.25rem solid #F8E71C;
+  border-left: 0.25rem solid #F8E71C;
+  position: relative;
+  left: -1rem;
+  top: -0.5rem;
+}
+.missionContainer .missionText {
+  padding: 2rem 1rem;
+}
+.missionContainer .missionText h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.15rem;
+  letter-spacing: 1.3px;
+  line-height: 1.6rem;
+  margin: 2rem 0 1rem 0;
+}
+.missionContainer .missionText .publishingTime {
+  font-style: italic;
+  color: #074115;
+  margin: 0 0 3rem 0;
+}
+.missionContainer .missionText .publishingTime .writerName {
+  font-weight: bold;
+}
+
 .commentsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,31 +452,30 @@ aside .sideBarImg img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.jeremy,
-.julia {
+.commentsContainer .jeremy,
+.commentsContainer .julia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 2.5rem 0 5rem 0;
 }
-.jeremy p,
-.julia p {
+.commentsContainer .jeremy p,
+.commentsContainer .julia p {
   margin: 0;
 }
-.jeremy img,
-.julia img {
+.commentsContainer .jeremy img,
+.commentsContainer .julia img {
   width: 4rem;
   height: 4rem;
 }
-.jeremy .jeremysComment,
-.jeremy .juliasComment,
-.julia .jeremysComment,
-.julia .juliasComment {
+.commentsContainer .jeremy .jeremysComment,
+.commentsContainer .jeremy .juliasComment,
+.commentsContainer .julia .jeremysComment,
+.commentsContainer .julia .juliasComment {
   margin-left: 1rem;
 }
-.jeremy .commentTime,
-.julia .commentTime {
+.commentsContainer .jeremy .commentTime,
+.commentsContainer .julia .commentTime {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -555,4 +553,106 @@ footer p {
   margin: 0;
   padding: 0.5rem 0;
   color: #f0EFED;
+}
+
+@media (max-width: 480px) {
+  .blogNav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .blogNavLinks {
+    display: none;
+  }
+
+  .blogHamburgerMenu {
+    display: block;
+    color: white;
+  }
+
+  header h1 {
+    padding-top: 30vh;
+    text-align: center;
+  }
+
+  .mainAsideFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainAsideFlex main {
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .mainAsideFlex aside {
+    width: 85%;
+    margin: 2rem auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    top: 0;
+  }
+  .mainAsideFlex aside .sideBarImg img {
+    width: 100%;
+  }
+
+  .sideBarText {
+    margin-left: 0;
+  }
+
+  .missionContainer {
+    width: 85%;
+    margin: 2rem;
+  }
+  .missionContainer .missionText h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: inherit;
+    text-align: center;
+  }
+  .missionContainer .publishingTime {
+    margin: 0;
+  }
+
+  .commentsContainer h3 {
+    margin: 0;
+    text-align: center;
+  }
+  .commentsContainer .jeremy,
+.commentsContainer .julia {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  .commentsContainer .jeremy img,
+.commentsContainer .julia img {
+    margin: 2rem auto;
+  }
+  .commentsContainer .jeremy .commentTime,
+.commentsContainer .julia .commentTime {
+    letter-spacing: inherit;
+  }
+
+  .formContainer {
+    padding: 1.5rem;
+  }
+  .formContainer .userInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formContainer .userInfo input {
+    width: 100%;
+  }
 }
