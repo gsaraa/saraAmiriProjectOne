@@ -103,9 +103,9 @@ h1 {
     color: $yellow;
 }
 
-.hamburgerMenu {
-    display: none;
-}
+// .hamburgerMenu {
+//     display: none;
+// }
 // ================> MAIN 
 
 // ================> ABOUT
@@ -130,55 +130,54 @@ h1 {
 .workshop {
     display: flex;
     justify-content: start;
-
-    .workshop div {
-        width: 50%;
-    }
-    
-    .workshopImg {
-        position: relative;
-    }
-    
-    .workshopImg img {
-        width: calc(100% - 6rem);
-        position: absolute;
-        left: 0;
-        top: -2.5rem;
-        box-shadow: 1rem 1rem 1px $yellow;
-    }
-    
-    .workshopText {
-        padding: 4rem 4rem 0 6rem;
-        text-align: start;
-    }
 }
 
+.workshop div {
+    width: 50%;
+}
+
+.workshopImg {
+    position: relative;
+}
+
+.workshopImg img {
+    width: calc(100% - 6rem);
+    position: absolute;
+    left: 0;
+    top: -2.5rem;
+    box-shadow: 1rem 1rem 1px $yellow;
+}
+
+.workshopText {
+    padding: 4rem 4rem 0 6rem;
+    text-align: start;
+}
 
 // ================> DISCOVER SECTION
 .discover {
     display: flex;
     margin-bottom: 2.5rem;
+}
 
-    .discover div {
-        width: 50%;
-    }
-    
-    .discoverImg {
-        position: relative;
-    }
-    
-    .discoverImg img {
-        width: calc(100% - 6rem);
-        position: absolute;
-        right: 0;
-        bottom: -5rem;
-        box-shadow: -1rem 1rem 1px $yellow;
-    }
-    
-    .discoverText {
-        padding: 4rem 6rem 0 4rem;
-        text-align: end;
-    }
+.discover div {
+    width: 50%;
+}
+
+.discoverImg {
+    position: relative;
+}
+
+.discoverImg img {
+    width: calc(100% - 6rem);
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    box-shadow: -1rem 1rem 1px $yellow;
+}
+
+.discoverText {
+    padding: 4rem 6rem 0 4rem;
+    text-align: end;
 }
 
 // ================> ADDITIONAL INFO
@@ -290,19 +289,21 @@ footer {
         }
     
         .homePageNav {
+            flex-direction: column;
             justify-content: space-between;
             padding-top: 2rem;
+
+            a {
+
+                text-align: center;
+                padding: 0 1rem;
+            }
         }
 
         .navLinks {
-            display: none;
+            margin: 2rem auto;
         }
-    
-        .hamburgerMenu {
-            display: block;
-            color: white;
-        }
-    
+        
     }
 
     .about {
@@ -315,49 +316,50 @@ footer {
 
     .workshop {
         flex-direction: column;
+    }
 
-        .workshop div {
-            width: 100%;
-        }
-        
-        .workshopImg img {
-            position: relative;
-            left: 2.5rem;
-            top: 1.5em;
-            box-shadow: 1rem 1rem 1px $yellow;
-        }
-        
-        .workshopText {
-            padding: 2.5rem;
-            text-align: center;
-        }
+    .workshop div {
+        width: 100%;
+    }
+    
+    .workshopImg img {
+        position: relative;
+        left: 2.5rem;
+        top: 1.5em;
+        box-shadow: 1rem 1rem 1px $yellow;
+    }
+    
+    .workshopText {
+        padding: 2.5rem;
+        text-align: center;
     }
 
     .discover {
         flex-direction: column;
         margin: 0;
 
-        .discover div {
-            width: 100%;
-        }
+    }
+    .discover div {
+        width: 100%;
+    }
 
-        .discoverImg img {
-            position: relative;
-            right: -2.5rem;
-            top: 1.5rem;
-            box-shadow: -1rem 1rem 1px $yellow;
-            order: 2;
-        }
-        
-        .discoverText {
-            padding: 2.5rem;
-            text-align: center;
-            order: 1;
-        }
+    .discoverImg img {
+        position: relative;
+        right: -2.5rem;
+        top: 1.5rem;
+        box-shadow: -1rem 1rem 1px $yellow;
+        order: 2;
+    }
+    
+    .discoverText {
+        padding: 2.5rem;
+        text-align: center;
+        order: 1;
     }
 
     .additionalInfoContainer {
         flex-direction: column;
+        
         .greenhouse,
         .community,
         .blog,

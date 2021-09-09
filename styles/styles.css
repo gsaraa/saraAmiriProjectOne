@@ -343,10 +343,6 @@ h1 {
   color: #F8E71C;
 }
 
-.hamburgerMenu {
-  display: none;
-}
-
 .about {
   padding: 10rem 0;
   background-color: #f0EFED;
@@ -373,13 +369,16 @@ h1 {
       -ms-flex-pack: start;
           justify-content: start;
 }
-.workshop .workshop div {
+
+.workshop div {
   width: 50%;
 }
-.workshop .workshopImg {
+
+.workshopImg {
   position: relative;
 }
-.workshop .workshopImg img {
+
+.workshopImg img {
   width: calc(100% - 6rem);
   position: absolute;
   left: 0;
@@ -387,7 +386,8 @@ h1 {
   -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
           box-shadow: 1rem 1rem 1px #F8E71C;
 }
-.workshop .workshopText {
+
+.workshopText {
   padding: 4rem 4rem 0 6rem;
   text-align: start;
 }
@@ -398,13 +398,16 @@ h1 {
   display: flex;
   margin-bottom: 2.5rem;
 }
-.discover .discover div {
+
+.discover div {
   width: 50%;
 }
-.discover .discoverImg {
+
+.discoverImg {
   position: relative;
 }
-.discover .discoverImg img {
+
+.discoverImg img {
   width: calc(100% - 6rem);
   position: absolute;
   right: 0;
@@ -412,7 +415,8 @@ h1 {
   -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
           box-shadow: -1rem 1rem 1px #F8E71C;
 }
-.discover .discoverText {
+
+.discoverText {
   padding: 4rem 6rem 0 4rem;
   text-align: end;
 }
@@ -525,17 +529,21 @@ footer p {
     margin: 50% 0;
   }
   header .homePageNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 2rem;
   }
-  header .navLinks {
-    display: none;
+  header .homePageNav a {
+    text-align: center;
+    padding: 0 1rem;
   }
-  header .hamburgerMenu {
-    display: block;
-    color: white;
+  header .navLinks {
+    margin: 2rem auto;
   }
 
   .about {
@@ -551,17 +559,20 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .workshop .workshop div {
+
+  .workshop div {
     width: 100%;
   }
-  .workshop .workshopImg img {
+
+  .workshopImg img {
     position: relative;
     left: 2.5rem;
     top: 1.5em;
     -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
             box-shadow: 1rem 1rem 1px #F8E71C;
   }
-  .workshop .workshopText {
+
+  .workshopText {
     padding: 2.5rem;
     text-align: center;
   }
@@ -573,10 +584,12 @@ footer p {
             flex-direction: column;
     margin: 0;
   }
-  .discover .discover div {
+
+  .discover div {
     width: 100%;
   }
-  .discover .discoverImg img {
+
+  .discoverImg img {
     position: relative;
     right: -2.5rem;
     top: 1.5rem;
@@ -586,7 +599,8 @@ footer p {
         -ms-flex-order: 2;
             order: 2;
   }
-  .discover .discoverText {
+
+  .discoverText {
     padding: 2.5rem;
     text-align: center;
     -webkit-box-ordinal-group: 2;

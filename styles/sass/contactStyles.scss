@@ -75,9 +75,9 @@ nav {
     color: $yellow;
 }
 
-.contactHamburgerMenu {
-    display: none;
-}
+// .contactHamburgerMenu {
+//     display: none;
+// }
 
 
 // ================> HEADER
@@ -211,17 +211,18 @@ footer {
 // ================> MEDIA QUERIES <================
 @media (max-width: 480px) {
     .contactNav {
+        flex-direction: column;
         justify-content: space-between;
         padding-top: 1rem;
+
+        a {
+            text-align: center;
+            padding: 0 1rem;
+        }
     }
 
     .contactNavLinks {
-        display: none;
-    }
-
-    .contactHamburgerMenu {
-        display: block;
-        color: white;
+        margin: 2rem auto;
     }
 
     header {
@@ -230,6 +231,7 @@ footer {
 
         h1 {
             text-align: center;
+            padding-top: 70%;
         }
     }
     

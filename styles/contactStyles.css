@@ -318,10 +318,6 @@ nav {
   color: #F8E71C;
 }
 
-.contactHamburgerMenu {
-  display: none;
-}
-
 header {
   background-image: url("../assets/contact-header-1.jpg");
   background-position: center;
@@ -465,19 +461,22 @@ footer p {
 
 @media (max-width: 480px) {
   .contactNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 1rem;
   }
-
-  .contactNavLinks {
-    display: none;
+  .contactNav a {
+    text-align: center;
+    padding: 0 1rem;
   }
 
-  .contactHamburgerMenu {
-    display: block;
-    color: white;
+  .contactNavLinks {
+    margin: 2rem auto;
   }
 
   header {
@@ -486,6 +485,7 @@ footer p {
   }
   header h1 {
     text-align: center;
+    padding-top: 70%;
   }
 
   .mainAsideFlex {

@@ -73,9 +73,9 @@ nav {
     color: $yellow;
 }
 
-.blogHamburgerMenu {
-    display: none;
-}
+// .blogHamburgerMenu {
+//     display: none;
+// }
 
 // ================> HEADER
 header {
@@ -291,22 +291,27 @@ footer {
 // ================> MEDIA QUERIES <================
 
 @media (max-width: 480px) {
+    nav {
+        height: inherit;
+    }
+
     .blogNav {
+        flex-direction: column;
         justify-content: space-between;
         padding-top: 1rem;
+
+        a {
+            text-align: center;
+            padding: 0 1rem;
+        }
     }
 
     .blogNavLinks {
-        display: none;
+        margin: 1rem auto;
     }
     
-    .blogHamburgerMenu {
-        display: block;
-        color: white;
-    }
-
     header h1 {
-        padding-top: 30vh;
+        padding-top: 70%;
         text-align: center;
     }
 

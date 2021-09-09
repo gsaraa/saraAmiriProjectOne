@@ -319,10 +319,6 @@ nav {
   color: #F8E71C;
 }
 
-.blogHamburgerMenu {
-  display: none;
-}
-
 header {
   background-image: url("../assets/blog-header-1.jpg");
   background-position: top left;
@@ -556,24 +552,31 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  nav {
+    height: inherit;
+  }
+
   .blogNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 1rem;
   }
-
-  .blogNavLinks {
-    display: none;
+  .blogNav a {
+    text-align: center;
+    padding: 0 1rem;
   }
 
-  .blogHamburgerMenu {
-    display: block;
-    color: white;
+  .blogNavLinks {
+    margin: 1rem auto;
   }
 
   header h1 {
-    padding-top: 30vh;
+    padding-top: 70%;
     text-align: center;
   }
 
