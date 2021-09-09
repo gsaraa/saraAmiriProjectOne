@@ -318,6 +318,10 @@ nav {
   color: #F8E71C;
 }
 
+.contactHamburgerMenu {
+  display: none;
+}
+
 header {
   background-image: url("../assets/contact-header-1.jpg");
   background-position: center;
@@ -354,14 +358,6 @@ header h1 {
 .mainAsideFlex aside {
   width: 30%;
   margin: 9rem 2rem 9rem 0;
-}
-
-main {
-  width: 70%;
-}
-
-aside {
-  width: 30%;
 }
 
 .socialMedia ul {
@@ -403,14 +399,20 @@ aside {
   right: 0;
   top: -12rem;
 }
-.commentContainer input {
+.commentContainer .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.commentContainer .userInfo input {
   width: 50%;
   height: 2rem;
   padding: 1rem;
   border: none;
   border-bottom: 2px solid #0E902D;
 }
-.commentContainer input[type=name] {
+.commentContainer .userInfo input[type=name] {
   margin-right: 1rem;
 }
 .commentContainer textarea {
@@ -450,13 +452,6 @@ textarea::placeholder {
   font-family: "Roboto", sans-serif;
 }
 
-.userInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem;
-}
-
 footer {
   background: #2C2C2C;
   text-align: center;
@@ -466,4 +461,79 @@ footer p {
   margin: 0;
   padding: 0.5rem 0;
   color: #f0EFED;
+}
+
+@media (max-width: 480px) {
+  .contactNav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .contactNavLinks {
+    display: none;
+  }
+
+  .contactHamburgerMenu {
+    display: block;
+    color: white;
+  }
+
+  header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  header h1 {
+    text-align: center;
+  }
+
+  .mainAsideFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .mainAsideFlex main {
+    width: 100%;
+  }
+  .mainAsideFlex aside {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .socialMedia ul {
+    width: 50%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .socialMedia ul a {
+    padding-right: 0;
+  }
+
+  .commentContainer {
+    top: 0;
+    padding: 2rem;
+    margin: 2rem 1rem;
+  }
+  .commentContainer .userInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .commentContainer .userInfo input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
 }

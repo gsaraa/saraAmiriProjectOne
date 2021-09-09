@@ -373,7 +373,7 @@ h1 {
       -ms-flex-pack: start;
           justify-content: start;
 }
-.workshop div {
+.workshop .workshop div {
   width: 50%;
 }
 .workshop .workshopImg {
@@ -398,7 +398,7 @@ h1 {
   display: flex;
   margin-bottom: 2.5rem;
 }
-.discover div {
+.discover .discover div {
   width: 50%;
 }
 .discover .discoverImg {
