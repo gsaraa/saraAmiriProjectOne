@@ -103,9 +103,6 @@ h1 {
     color: $yellow;
 }
 
-// .hamburgerMenu {
-//     display: none;
-// }
 // ================> MAIN 
 
 // ================> ABOUT
@@ -125,27 +122,33 @@ h1 {
 
 // ================> ARTICLES SECTION
 
-// ================> WORKSHOP SECTION
+// ================> WORKSHOP & DISCOVER SECTION 
 
 .workshop {
     display: flex;
     justify-content: start;
 }
 
-.workshop div {
+.workshop div,
+.discover div {
     width: 50%;
 }
 
-.workshopImg {
+.workshopImg,
+.discoverImg {
     position: relative;
 }
 
 .workshopImg img {
-    width: calc(100% - 6rem);
-    position: absolute;
     left: 0;
     top: -2.5rem;
     box-shadow: 1rem 1rem 1px $yellow;
+}
+
+.workshopImg img,
+.discover img {
+    width: calc(100% - 6rem);
+    position: absolute;
 }
 
 .workshopText {
@@ -153,23 +156,12 @@ h1 {
     text-align: start;
 }
 
-// ================> DISCOVER SECTION
 .discover {
     display: flex;
     margin-bottom: 2.5rem;
 }
 
-.discover div {
-    width: 50%;
-}
-
-.discoverImg {
-    position: relative;
-}
-
 .discoverImg img {
-    width: calc(100% - 6rem);
-    position: absolute;
     right: 0;
     bottom: -5rem;
     box-shadow: -1rem 1rem 1px $yellow;
@@ -245,10 +237,10 @@ h1 {
 .gallery ul {
     display: flex;
     justify-content: center;
-}
 
-.gallery ul li {
-    margin: 4rem 1rem;
+    li {
+        margin: 5rem 1rem 2rem 1rem;
+    }
 }
 
 .gallery img {
@@ -259,7 +251,7 @@ h1 {
 footer {
     background: $black;
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 2rem;
 
         p {
             margin: 0;
@@ -268,10 +260,27 @@ footer {
         }
 }
 
-
 // ================> MEDIA QUERIES <================
+@media (max-width: 1000px) {
+    .headingImg2 {
+        top: 12rem;
+    }
 
-@media (max-width: 480px) {
+    h1 {
+        margin: 15%;
+    }
+
+    .workshopText,
+    .discoverText {
+        padding: 1rem 0;
+    }
+
+    .gallery img {
+        height: inherit;
+    }
+}
+
+@media (max-width: 768px) {
     header {
         background-position: center;
         background-repeat: no-repeat;
@@ -285,7 +294,7 @@ footer {
         h1 {
             font-size: 4rem;
             text-align: center;
-            margin: 50% 0;
+            margin: 30% 0;
         }
     
         .homePageNav {
@@ -318,7 +327,8 @@ footer {
         flex-direction: column;
     }
 
-    .workshop div {
+    .workshop div,
+    .discover div {
         width: 100%;
     }
     
@@ -331,16 +341,13 @@ footer {
     
     .workshopText {
         padding: 2.5rem;
+        margin: 1rem auto;
         text-align: center;
     }
 
     .discover {
         flex-direction: column;
         margin: 0;
-
-    }
-    .discover div {
-        width: 100%;
     }
 
     .discoverImg img {
@@ -353,6 +360,7 @@ footer {
     
     .discoverText {
         padding: 2.5rem;
+        margin: 1rem 0;
         text-align: center;
         order: 1;
     }
@@ -403,4 +411,14 @@ footer {
     footer {
         margin-top: 0rem;
     }
+}
+
+@media (max-width: 480px) {
+        header h1 {
+            margin: 50% 0;
+        }
+
+        .homePageNav a {
+            padding: 0;
+        }
 }
