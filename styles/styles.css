@@ -675,10 +675,6 @@ footer p {
   }
 }
 @media (max-width: 480px) {
-  header h1 {
-    margin: 50% 0;
-  }
-
   .homePageNav a {
     padding: 0;
   }
