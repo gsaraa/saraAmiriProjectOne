@@ -459,7 +459,11 @@ footer p {
   color: #f0EFED;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  nav {
+    height: inherit;
+  }
+
   .contactNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -497,16 +501,22 @@ footer p {
   }
   .mainAsideFlex main {
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .mainAsideFlex aside {
     width: 100%;
     margin: 2rem 0;
     text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .socialMedia ul {
     width: 50%;
-    margin: 0 auto;
+    margin: 2rem auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

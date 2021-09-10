@@ -289,8 +289,19 @@ footer {
 }
 
 // ================> MEDIA QUERIES <================
+@media (max-width: 1000px) {
+    .missionContainer {
+        .missionText h2 {
+            @include boldHeading (2rem, 1px, inherit);
+        }
+    }
 
-@media (max-width: 480px) {
+    .sideBarText {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
     nav {
         height: inherit;
     }
@@ -311,7 +322,7 @@ footer {
     }
     
     header h1 {
-        padding-top: 70%;
+        padding-top: 45%;
         text-align: center;
     }
 
@@ -336,18 +347,9 @@ footer {
         }
     }
 
-    .sideBarText {
-        margin-left: 0;
-    }
-
     .missionContainer {
         width: 85%;
         margin: 2rem;
-
-        .missionText h2 {
-            @include boldHeading (2rem, 1px, inherit);
-            text-align: center;
-        }
 
         .publishingTime {
             margin: 0;
@@ -383,6 +385,20 @@ footer {
 
             input {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .missionContainer {
+        .missionText {
+            h2{
+                text-align: center;
+            }
+            
+            .publishingTime {
+                margin: 0;
             }
         }
     }

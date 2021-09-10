@@ -551,7 +551,20 @@ footer p {
   color: #f0EFED;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
+  .missionContainer .missionText h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: inherit;
+  }
+
+  .sideBarText {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
   nav {
     height: inherit;
   }
@@ -576,7 +589,7 @@ footer p {
   }
 
   header h1 {
-    padding-top: 70%;
+    padding-top: 45%;
     text-align: center;
   }
 
@@ -605,21 +618,9 @@ footer p {
     width: 100%;
   }
 
-  .sideBarText {
-    margin-left: 0;
-  }
-
   .missionContainer {
     width: 85%;
     margin: 2rem;
-  }
-  .missionContainer .missionText h2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    line-height: inherit;
-    text-align: center;
   }
   .missionContainer .publishingTime {
     margin: 0;
@@ -657,5 +658,13 @@ footer p {
   }
   .formContainer .userInfo input {
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .missionContainer .missionText h2 {
+    text-align: center;
+  }
+  .missionContainer .missionText .publishingTime {
+    margin: 0;
   }
 }
