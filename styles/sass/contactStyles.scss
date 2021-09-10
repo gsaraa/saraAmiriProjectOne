@@ -1,13 +1,16 @@
 // ================> PARTIALS
+
 @import "setup";
 @import "vars";
 @import "mixin";
 
 // ================> TYPOGRAPHY / GENERAL
+
 html {
     @include baseFont();
     background-color: $offWhite;
 }
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -75,12 +78,8 @@ nav {
     color: $yellow;
 }
 
-// .contactHamburgerMenu {
-//     display: none;
-// }
-
-
 // ================> HEADER
+
 header {
     background-image: url($contactHeader);
     background-position: center;
@@ -99,6 +98,7 @@ header h1 {
 }
 
 // ================> MAIN
+
 .mainAsideFlex {
     display: flex;
     flex: 1 0 auto;
@@ -113,14 +113,6 @@ header h1 {
             margin: 9rem 2rem 9rem 0;
         }
 }
-
-// main {
-//     width: 70%;
-// }
-
-// aside {
-//     width: 30%;
-// }
 
 .socialMedia ul {
     display: flex;
@@ -221,7 +213,7 @@ footer {
 
         a {
             text-align: center;
-            padding: 0 1rem;
+            padding: 0 .75rem;
         }
     }
 

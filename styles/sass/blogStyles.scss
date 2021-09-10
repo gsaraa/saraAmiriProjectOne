@@ -1,6 +1,10 @@
+// ================> PARTIALS
+
 @import "setup";
 @import "vars";
 @import "mixin";
+
+// ================> TYPOGRAPHY / GENERAL
 
 html {
     @include baseFont();
@@ -73,11 +77,8 @@ nav {
     color: $yellow;
 }
 
-// .blogHamburgerMenu {
-//     display: none;
-// }
-
 // ================> HEADER
+
 header {
     background-image: url($blogHeader);
     background-position: top left;
@@ -92,6 +93,7 @@ header {
 }
 
 // ================> MAIN and ASIDE
+
 .mainAsideFlex {
     display: flex;
 }
@@ -194,6 +196,7 @@ main {
 }
 
 // ================> COMMENTS SECTION
+
 .commentsContainer {
     display: flex;
     width: 95%;
@@ -227,6 +230,7 @@ main {
 }      
 
 // ================> COMMENT FORM
+
 .formContainer {
     display: flex;
     flex-direction: column;
@@ -274,8 +278,8 @@ main {
         }
 }
 
-
 // ================> FOOTER
+
 footer {
     background: $black;
     text-align: center;
@@ -289,6 +293,7 @@ footer {
 }
 
 // ================> MEDIA QUERIES <================
+
 @media (max-width: 1000px) {
     .missionContainer {
         .missionText h2 {
@@ -300,6 +305,8 @@ footer {
         margin: 0;
     }
 }
+
+// ================> 768px
 
 @media (max-width: 768px) {
     nav {
@@ -313,7 +320,7 @@ footer {
 
         a {
             text-align: center;
-            padding: 0 1rem;
+            padding: 0 .75rem;
         }
     }
 
@@ -389,6 +396,8 @@ footer {
         }
     }
 }
+
+// ================> 480px
 
 @media (max-width: 480px) {
     .missionContainer {

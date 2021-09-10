@@ -1,9 +1,11 @@
 // ================> PARTIALS
+
 @import "setup";
 @import "vars";
 @import "mixin";
 
 // ================> TYPOGRAPHY / GENERAL
+
 html {
     @include baseFont();
 }
@@ -44,6 +46,7 @@ img {
 }
 
 // ================> HEADER
+
 header {
     background-image: url($backgroundImg);
     background-position: center;
@@ -74,6 +77,7 @@ h1 {
 }
 
 // ================> NAV
+
 .homePageNav {
     display: flex;
     padding-top: 1.2rem;
@@ -106,6 +110,7 @@ h1 {
 // ================> MAIN 
 
 // ================> ABOUT
+
 .about {
     padding: 10rem 0;
     background-color: $offWhite;
@@ -173,6 +178,7 @@ h1 {
 }
 
 // ================> ADDITIONAL INFO
+
 .additionalInfo {
     padding: 6rem 0;
     background-color: $offWhite;
@@ -204,12 +210,10 @@ h1 {
                 margin: 0.5rem;
             }
     }
-
 }
 
-// ================> BANNER
-
 // ================> FOUNDER SECTION
+
 .founder {
     background-color: $offWhite;
     padding: 6rem 0;
@@ -231,9 +235,8 @@ h1 {
     }
 }
 
-
-
 // ================> GALLERY
+
 .gallery ul {
     display: flex;
     justify-content: center;
@@ -248,6 +251,7 @@ h1 {
 }
 
 // ================> FOOTER
+
 footer {
     background: $black;
     text-align: center;
@@ -280,6 +284,8 @@ footer {
     }
 }
 
+// ================> 768px
+
 @media (max-width: 768px) {
     header {
         background-position: center;
@@ -305,7 +311,7 @@ footer {
             a {
 
                 text-align: center;
-                padding: 0 1rem;
+                padding: 0 .75rem;
             }
         }
 
@@ -412,6 +418,8 @@ footer {
         margin-top: 0rem;
     }
 }
+
+// ================> 480px
 
 @media (max-width: 480px) {
         .homePageNav a {

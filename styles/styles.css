@@ -553,7 +553,7 @@ footer p {
   }
   header .homePageNav a {
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
   header .navLinks {
     margin: 2rem auto;
