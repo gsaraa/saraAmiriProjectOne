@@ -370,21 +370,27 @@ h1 {
           justify-content: start;
 }
 
-.workshop div {
+.workshop div,
+.discover div {
   width: 50%;
 }
 
-.workshopImg {
+.workshopImg,
+.discoverImg {
   position: relative;
 }
 
 .workshopImg img {
-  width: calc(100% - 6rem);
-  position: absolute;
   left: 0;
   top: -2.5rem;
   -webkit-box-shadow: 1rem 1rem 1px #F8E71C;
           box-shadow: 1rem 1rem 1px #F8E71C;
+}
+
+.workshopImg img,
+.discover img {
+  width: calc(100% - 6rem);
+  position: absolute;
 }
 
 .workshopText {
@@ -399,17 +405,7 @@ h1 {
   margin-bottom: 2.5rem;
 }
 
-.discover div {
-  width: 50%;
-}
-
-.discoverImg {
-  position: relative;
-}
-
 .discoverImg img {
-  width: calc(100% - 6rem);
-  position: absolute;
   right: 0;
   bottom: -5rem;
   -webkit-box-shadow: -1rem 1rem 1px #F8E71C;
@@ -493,9 +489,8 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .gallery ul li {
-  margin: 4rem 1rem;
+  margin: 5rem 1rem 2rem 1rem;
 }
 
 .gallery img {
@@ -505,7 +500,7 @@ h1 {
 footer {
   background: #2C2C2C;
   text-align: center;
-  margin-top: 9rem;
+  margin-top: 2rem;
 }
 footer p {
   margin: 0;
@@ -513,7 +508,25 @@ footer p {
   color: #f0EFED;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
+  .headingImg2 {
+    top: 12rem;
+  }
+
+  h1 {
+    margin: 15%;
+  }
+
+  .workshopText,
+.discoverText {
+    padding: 1rem 0;
+  }
+
+  .gallery img {
+    height: inherit;
+  }
+}
+@media (max-width: 768px) {
   header {
     background-position: center;
     background-repeat: no-repeat;
@@ -526,7 +539,7 @@ footer p {
   header h1 {
     font-size: 4rem;
     text-align: center;
-    margin: 50% 0;
+    margin: 30% 0;
   }
   header .homePageNav {
     -webkit-box-orient: vertical;
@@ -560,7 +573,8 @@ footer p {
             flex-direction: column;
   }
 
-  .workshop div {
+  .workshop div,
+.discover div {
     width: 100%;
   }
 
@@ -574,6 +588,7 @@ footer p {
 
   .workshopText {
     padding: 2.5rem;
+    margin: 1rem auto;
     text-align: center;
   }
 
@@ -583,10 +598,6 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-  }
-
-  .discover div {
-    width: 100%;
   }
 
   .discoverImg img {
@@ -602,6 +613,7 @@ footer p {
 
   .discoverText {
     padding: 2.5rem;
+    margin: 1rem 0;
     text-align: center;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -660,5 +672,14 @@ footer p {
 
   footer {
     margin-top: 0rem;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    margin: 50% 0;
+  }
+
+  .homePageNav a {
+    padding: 0;
   }
 }

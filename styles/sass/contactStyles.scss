@@ -209,7 +209,11 @@ footer {
 }
 
 // ================> MEDIA QUERIES <================
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    nav {
+        height: inherit;
+    }
+
     .contactNav {
         flex-direction: column;
         justify-content: space-between;
@@ -231,7 +235,7 @@ footer {
 
         h1 {
             text-align: center;
-            padding-top: 70%;
+            padding-top: 45%;
         }
     }
     
@@ -241,18 +245,20 @@ footer {
 
         main {
             width: 100%;
+            order: 1;
         }
 
         aside {
             width: 100%;
             margin: 2rem 0;
             text-align: center;
+            order: 2;
         }
     }
 
     .socialMedia ul {
         width: 50%;
-        margin: 0 auto;
+        margin: 2rem auto;
         justify-content: space-between;
 
         a {
