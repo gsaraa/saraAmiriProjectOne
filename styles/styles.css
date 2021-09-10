@@ -675,7 +675,14 @@ footer p {
   }
 }
 @media (max-width: 480px) {
-  .homePageNav a {
-    padding: 0;
+  header .homePageNav a {
+    padding: 0 0.65rem;
+  }
+  header .navLinks {
+    margin: 1rem auto;
+  }
+
+  .navLinks a {
+    font-size: 0.9rem;
   }
 }

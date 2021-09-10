@@ -277,3 +277,14 @@ footer {
         margin-top: 2rem;
     }
 }
+
+@media (max-width: 480px) {
+    .contactNavLinks {
+        margin: 0.75rem 0 0 0;
+    }
+    
+    .contactNavLinks a {
+        font-size: 0.9rem;
+        padding: .5rem auto;
+    }
+}

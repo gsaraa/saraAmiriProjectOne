@@ -661,6 +661,15 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  .blogNavLinks {
+    margin: 0.75rem 0 0 0;
+  }
+
+  .blogNavLinks a {
+    font-size: 0.9rem;
+    padding: 0.5rem auto;
+  }
+
   .missionContainer .missionText h2 {
     text-align: center;
   }

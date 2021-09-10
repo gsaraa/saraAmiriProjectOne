@@ -400,6 +400,14 @@ footer {
 // ================> 480px
 
 @media (max-width: 480px) {
+    .blogNavLinks {
+        margin: 0.75rem 0 0 0;
+    }
+    
+    .blogNavLinks a {
+        font-size: 0.9rem;
+        padding: .5rem auto;
+    }
     .missionContainer {
         .missionText {
             h2{

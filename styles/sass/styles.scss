@@ -421,8 +421,18 @@ footer {
 
 // ================> 480px
 
-@media (max-width: 480px) {
-        .homePageNav a {
-            padding: 0;
+@media (max-width: 480px) {        
+        header {
+            .homePageNav a {
+                padding: 0 .65rem;
+            }
+
+            .navLinks {
+                margin: 1rem auto;
+            }
+            
+        }
+        .navLinks a {
+            font-size: 0.9rem;
         }
 }
