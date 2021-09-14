@@ -7,8 +7,12 @@
 // ================> TYPOGRAPHY / GENERAL
 
 html {
-    @include baseFont();
+    // @include baseFont();
     background-color: $offWhite;
+}
+
+body {
+    @include baseFont();
 }
 .wrapper {
     width: 90%;

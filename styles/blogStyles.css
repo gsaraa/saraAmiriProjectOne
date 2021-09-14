@@ -237,10 +237,13 @@ html {
 }
 
 html {
+  background-color: #f0EFED;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 125%;
-  background-color: #f0EFED;
 }
 
 .wrapper {
