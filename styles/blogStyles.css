@@ -457,7 +457,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2.5rem 0 5rem 0;
 }
 .commentsContainer .jeremy p,
 .commentsContainer .julia p,
@@ -472,13 +471,10 @@ main {
 }
 .commentsContainer .jeremy .jeremysComment,
 .commentsContainer .jeremy .juliasComment,
-.commentsContainer .jeremy .newComment,
 .commentsContainer .julia .jeremysComment,
 .commentsContainer .julia .juliasComment,
-.commentsContainer .julia .newComment,
 .commentsContainer .newUserComment .jeremysComment,
-.commentsContainer .newUserComment .juliasComment,
-.commentsContainer .newUserComment .newComment {
+.commentsContainer .newUserComment .juliasComment {
   margin-left: 1rem;
 }
 .commentsContainer .jeremy .commentTime,
@@ -491,6 +487,18 @@ main {
   line-height: 1.6rem;
   color: #074115;
   margin-bottom: 0.5rem;
+}
+
+.jeremy,
+.julia {
+  margin: 2.5rem 0 5rem 0;
+}
+
+.newUserComment .newComment {
+  margin: 2.5rem 0 5rem 1rem;
+}
+.newUserComment img {
+  margin-top: 2.5rem;
 }
 
 .formContainer {

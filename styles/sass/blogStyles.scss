@@ -210,7 +210,6 @@ main {
     .julia,
     .newUserComment {
         display: flex;
-        margin: 2.5rem 0 5rem 0;
         
             p {
                 margin: 0;
@@ -222,8 +221,7 @@ main {
             }
     
             .jeremysComment,
-            .juliasComment,
-            .newComment {
+            .juliasComment {
                 margin-left: 1rem;
             }
     
@@ -234,7 +232,20 @@ main {
             }
     }
 }      
+.jeremy,
+.julia {
+    margin: 2.5rem 0 5rem 0;
+}
 
+.newUserComment {
+    .newComment {
+        margin: 2.5rem 0 5rem 1rem;
+    }
+
+    img {
+        margin-top: 2.5rem;
+    }
+}
 // ================> COMMENT FORM
 
 .formContainer {
