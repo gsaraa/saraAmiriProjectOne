@@ -387,21 +387,33 @@ footer {
         }
 
         .jeremy,
-        .julia {
+        .julia,
+        .newUserComment {
             flex-direction: column;
-            margin: 1rem 0;
+            
             
                 img {
                     margin: 2rem auto;
                 }
-    
         
                 .commentTime {
                     letter-spacing: inherit;
                 }
         }
+
+        .jeremy,
+        .julia {
+            margin: 1rem 0;
+        }
     }
 
+    .newUserComment {
+        .newComment {
+            margin: 0;
+        }
+    }
+
+    
     .formContainer {
         padding: 1.5rem;
         .userInfo {

@@ -651,20 +651,30 @@ footer p {
     text-align: center;
   }
   .commentsContainer .jeremy,
-.commentsContainer .julia {
+.commentsContainer .julia,
+.commentsContainer .newUserComment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 1rem 0;
   }
   .commentsContainer .jeremy img,
-.commentsContainer .julia img {
+.commentsContainer .julia img,
+.commentsContainer .newUserComment img {
     margin: 2rem auto;
   }
   .commentsContainer .jeremy .commentTime,
-.commentsContainer .julia .commentTime {
+.commentsContainer .julia .commentTime,
+.commentsContainer .newUserComment .commentTime {
     letter-spacing: inherit;
+  }
+  .commentsContainer .jeremy,
+.commentsContainer .julia {
+    margin: 1rem 0;
+  }
+
+  .newUserComment .newComment {
+    margin: 0;
   }
 
   .formContainer {
