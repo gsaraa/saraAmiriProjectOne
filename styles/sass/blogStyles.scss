@@ -207,7 +207,8 @@ main {
     flex-direction: column;
 
     .jeremy,
-    .julia {
+    .julia,
+    .newUserComment {
         display: flex;
         margin: 2.5rem 0 5rem 0;
         
@@ -221,7 +222,8 @@ main {
             }
     
             .jeremysComment,
-            .juliasComment {
+            .juliasComment,
+            .newComment {
                 margin-left: 1rem;
             }
     

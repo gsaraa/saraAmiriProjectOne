@@ -452,29 +452,38 @@ main {
           flex-direction: column;
 }
 .commentsContainer .jeremy,
-.commentsContainer .julia {
+.commentsContainer .julia,
+.commentsContainer .newUserComment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 2.5rem 0 5rem 0;
 }
 .commentsContainer .jeremy p,
-.commentsContainer .julia p {
+.commentsContainer .julia p,
+.commentsContainer .newUserComment p {
   margin: 0;
 }
 .commentsContainer .jeremy img,
-.commentsContainer .julia img {
+.commentsContainer .julia img,
+.commentsContainer .newUserComment img {
   width: 4rem;
   height: 4rem;
 }
 .commentsContainer .jeremy .jeremysComment,
 .commentsContainer .jeremy .juliasComment,
+.commentsContainer .jeremy .newComment,
 .commentsContainer .julia .jeremysComment,
-.commentsContainer .julia .juliasComment {
+.commentsContainer .julia .juliasComment,
+.commentsContainer .julia .newComment,
+.commentsContainer .newUserComment .jeremysComment,
+.commentsContainer .newUserComment .juliasComment,
+.commentsContainer .newUserComment .newComment {
   margin-left: 1rem;
 }
 .commentsContainer .jeremy .commentTime,
-.commentsContainer .julia .commentTime {
+.commentsContainer .julia .commentTime,
+.commentsContainer .newUserComment .commentTime {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
